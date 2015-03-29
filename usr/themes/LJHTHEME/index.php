@@ -1,12 +1,11 @@
 <?php
 
 /**
- * 这是Sloger的包含bootstrap和semantic的主题
+ * 这是LJH修改的主题
  * 
- * @package Boot-Sematic Theme
- * @author Sloger
+ * @package LJH Theme
+ * @author LJH
  * @version 1.0
- * @link http://blog.sloger.info
  */
  
     $this->need('header.php');
