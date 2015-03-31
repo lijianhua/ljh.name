@@ -1,11 +1,6 @@
 <?php $this->comments()->to($comments); ?>
 <div id="comments">
 <div class="block">
-<div class="info">
-    <div class="content">
-    <p class="ui <?php $this->options->labelColor() ?> ribbon label comments"><?php $this->commentsNum(_t('还不快抢沙发'), _t('只有地板了'), _t('已有 %d 人抢先你了')); ?></p>
-    </div>
-</div>
     <?php $comments->listComments(); ?>
 
     <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
@@ -15,7 +10,7 @@
 
 <div class="info" id="<?php $this->respondId(); ?>">
     <div class="mark-top">
-       <span class="label-primary mark">已有 3 人抢先你了</span>
+       <span class="label-primary mark"><?php $this->commentsNum(_t('还不快抢沙发'), _t('只有地板了'), _t('已有 %d 人抢先你了')); ?></span>
     </div>
     <div class="content" style="padding-top: 10px">
     <div>
