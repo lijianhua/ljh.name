@@ -3,30 +3,29 @@
 /**
  * 这是LJH修改的主题
  * 
- * @package LJH Theme
- * @author LJH
+ * @package Hogo Theme
+ * @author  Hogo
  * @version 1.0
  */
  
     $this->need('header.php');
 ?>
-
 <div class="main">
-    <?php while($this->next()): ?>
-    <article class="block post">
-        <span class="round-date <?php $this->options->labelColor() ?>">
-            <span class="month"><?php $this->date('m月'); ?></span>
-            <span class="day"><?php $this->date('d'); ?></span>
-        </span>
-        <p class="title"><a href="<?php $this->permalink() ?>" target="_blank"><?php $this->title() ?></a></p>
-        <div class="ui ribbon label <?php $this->options->labelColor() ?>"><?php $this->category(','); ?></div>
-            <div class="article-content <?php $this->options->labelColor() ?>">
+  <?php while($this->next()): ?>
+  <div class="info">
+            <div class="info-title"><a href="<?php $this->permalink() ?>" target="_blank"><?php $this->title() ?></a></div>
+            <div class="content">
+                <div class="info-time">
+                    <i class="info-img"></i>
+                    <span><?php $this->date('Y-m-d'); ?></span>
+                </div>
                 <?php $this->content('阅读全文 >>'); ?>
             </div>
-        </article>
+        </div>
     <?php endwhile; ?>
-    <?php $this->pageNav('<< 上一页', '下一页 >>'); ?>
+    <nav>
+      <?php $this->pageNav('&laquo;', '&raquo;'); ?>
+    </nav>
 </div>
 
-<?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>

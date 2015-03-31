@@ -104,7 +104,7 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
         
         $commentLevelClass = $this->levels > 0 ? ' comment-child' : ' comment-parent';
 ?>
-<li itemscope itemtype="http://schema.org/UserComments" id="<?php $this->theId(); ?>" class="comment-body<?php
+<li itemscope itemtype="http://schema.org/UserComments" id="<?php $this->theId(); ?>" class="content  info comment-body<?php
     if ($this->levels > 0) {
         echo ' comment-child';
         $this->levelsAlt(' comment-level-odd', ' comment-level-even');
@@ -113,7 +113,7 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
     }
     $this->alt(' comment-odd', ' comment-even');
     echo $commentClass;
-?>">
+?>" style="padding-top: 10px">
     <div class="comment-author" itemprop="creator" itemscope itemtype="http://schema.org/Person">
         <span itemprop="image"><?php $this->gravatar($singleCommentOptions->avatarSize, $singleCommentOptions->defaultAvatar); ?></span>
         <cite class="fn" itemprop="name"><?php $singleCommentOptions->beforeAuthor();

@@ -284,9 +284,9 @@ class Widget_Metas_Category_List extends Widget_Abstract_Metas
         //初始化一些变量
         $this->_categoryOptions = Typecho_Config::factory($categoryOptions);
         $this->_categoryOptions->setDefault(array(
-            'wrapTag'           =>  'ul',
+            'wrapTag'           =>  '',
             'wrapClass'         =>  '',
-            'itemTag'           =>  'li',
+            'itemTag'           =>  'dd',
             'itemClass'         =>  '',
             'showCount'         =>  false,
             'showFeed'          =>  false,
@@ -301,12 +301,12 @@ class Widget_Metas_Category_List extends Widget_Abstract_Metas
             $this->stack = $this->getCategories($this->_top);
 
             if ($this->have()) { 
-                echo '<' . $this->_categoryOptions->wrapTag . (empty($this->_categoryOptions->wrapClass)
-                    ? '' : ' class="' . $this->_categoryOptions->wrapClass . '"') . '>';
+                // echo '<' . $this->_categoryOptions->wrapTag . (empty($this->_categoryOptions->wrapClass)
+                //     ? '' : ' class="' . $this->_categoryOptions->wrapClass . '"') . '>';
                 while ($this->next()) {
                     $this->treeViewCategoriesCallback();
                 }
-                echo '</' . $this->_categoryOptions->wrapTag . '>';
+                // echo '</' . $this->_categoryOptions->wrapTag . '>';
             }
 
             $this->stack = $this->_map;

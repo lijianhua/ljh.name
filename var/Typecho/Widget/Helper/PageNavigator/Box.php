@@ -39,7 +39,7 @@ class Typecho_Widget_Helper_PageNavigator_Box extends Typecho_Widget_Helper_Page
         $default = array(
             'itemTag'       =>  'li',
             'textTag'       =>  'span',
-            'currentClass'  =>  'current',
+            'currentClass'  =>  'active',
             'prevClass'     =>  'prev',
             'nextClass'     =>  'next'
         );

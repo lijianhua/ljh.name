@@ -2,7 +2,7 @@
 
 <div class="main">
     <div class="category block">
-        <p class="ui ribbon label <?php $this->options->labelColor() ?>"><?php $this->archiveTitle(array(
+        <p class="sfonts ui ribbon label <?php $this->options->labelColor() ?>"><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
@@ -12,25 +12,24 @@
     </div>
     <?php if ($this->have()): ?>
         <?php while($this->next()): ?>
-        <article class="block post">
-            <span class="round-date <?php $this->options->labelColor() ?>">
-                <span class="month"><?php $this->date('m月'); ?></span>
-                <span class="day"><?php $this->date('d'); ?></span>
-            </span>
-            <h2 class="title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
-            <div class="article-content <?php $this->options->labelColor() ?>">
-                <?php $this->content('阅读全文 >>'); ?>
-            </div>
-        </article>
+        <div class="info">
+              <div class="info-title"><a href="<?php $this->permalink() ?>" target="_blank"><?php $this->title() ?></a></div>
+              <div class="content">
+                  <div class="info-time">
+                      <i class="info-img"></i>
+                      <span><?php $this->date('Y-m-d'); ?></span>
+                  </div>
+                  <?php $this->content('阅读全文 >>'); ?>
+              </div>
+          </div>
         <?php endwhile; ?>
     <?php else: ?>
-        <article class="block">
+        <div class="info">
             <h2 class="header"><?php _e('没有找到内容'); ?></h2>
-        </article>
+        </div>
     <?php endif; ?>
 
-    <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+    <?php $this->pageNav('&laquo;', '&raquo;'); ?>
 </div>
 
-<?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>

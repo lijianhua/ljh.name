@@ -1417,8 +1417,8 @@ class Widget_Archive extends Widget_Abstract_Contents
         if ($this->have()) {
             $hasNav = false;
             $default = array(
-                'wrapTag'       =>  'ol',
-                'wrapClass'     =>  'page-navigator'
+                'wrapTag'       =>  'ul',
+                'wrapClass'     =>  'pagination'
             );
 
             if (is_string($template)) {
