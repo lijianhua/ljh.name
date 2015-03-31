@@ -14,6 +14,9 @@
 <?php if($this->allow('comment')): ?>
 
 <div class="info" id="<?php $this->respondId(); ?>">
+    <div class="mark-top">
+       <span class="label-primary mark">已有 3 人抢先你了</span>
+    </div>
     <div class="content" style="padding-top: 10px">
     <div>
       	<?php $comments->cancelReply(); ?>
