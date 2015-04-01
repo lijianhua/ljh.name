@@ -10,7 +10,7 @@
 
 <div class="main">
     <div class="info">
-        <div class="info-title"><?php $this->title() ?></div>
+        <div class="info-title-detail"><?php $this->title() ?></div>
         <div class="content">
             <div class="info-time">
                 <i class="info-img"></i>

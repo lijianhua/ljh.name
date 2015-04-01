@@ -19,7 +19,11 @@ body{
     padding: 0;
     background: url("../images/bg.png") repeat 0 0;
 }
-img{
+ol,ul,li{
+    margin: 0;
+    padding: 0;
+}
+p img{
     max-width: 100%;
     text-align: center;
     display: block;
@@ -138,6 +142,20 @@ h6 a{
     margin-bottom: 12px;
 }
 .info-title{
+    height: 54px;
+    width: 100%;
+    background-color: #f1f1f1;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 2;
+    /*text-indent: 1em;*/
+    padding-left: 20px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.info-title-detail{
+    color: #000000;
     height: 54px;
     width: 100%;
     background-color: #f1f1f1;
