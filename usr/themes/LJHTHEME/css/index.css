@@ -253,3 +253,7 @@ code{
     word-break:break-all;
 }
 
+video{
+  width:100%;
+  display:block;
+}
