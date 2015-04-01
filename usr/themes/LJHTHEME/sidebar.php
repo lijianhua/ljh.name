@@ -20,5 +20,8 @@
         <?php $this->widget('Widget_Metas_Category_List')->listCategories(); ?>
         </dl>
     </div>
-<div class="company"><span>© 2007 - 2015  Hello World   京ICP备49682674号-1</span></div>
+<div class="company"><span>
+  © 2015  <?php $this->options->title();?>   京ICP备14056036号-1
+    <?php _e('由 Typecho 强力驱动'); ?>.
+</span></div>
 </div>
