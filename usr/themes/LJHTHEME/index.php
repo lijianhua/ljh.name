@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 这是LJH修改的主题
+ * 这是Hogo修改的主题
  * 
  * @package Hogo Theme
  * @author  Hogo
