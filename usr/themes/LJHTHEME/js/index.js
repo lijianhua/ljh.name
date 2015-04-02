@@ -8,8 +8,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".go-top a").click(function(event){
-        event.preventDefault();
-        $("html,body").animate({scrollTop:0},1000);
+    $(".go-top").click(function(){
+            $("html,body").animate({scrollTop:0},1000);
     })
 })

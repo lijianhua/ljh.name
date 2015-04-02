@@ -248,6 +248,9 @@ h6 a{
         margin: 0 auto;
         padding: 20px 0 20px 10px;
     }
+    .icon-head {
+        margin-right:10px;
+    }
 }
 .mark-top{
     position: relative;
@@ -282,6 +285,10 @@ video{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    background:url("../images/top.png") no-repeat 0 0;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
 }
 .company img{
     display: inline-block;
@@ -292,4 +299,7 @@ video{
 }
 .icon-head a{
   margin-left:5px;
+}
+.comment-author img{
+  border-radius:50%;
 }
