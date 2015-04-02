@@ -27,6 +27,7 @@
     <link rel="Shortcut Icon" href="<?php $this->options->siteIcon() ?>" />
     <link rel="Bootmark" href="<?php $this->options->siteIcon() ?>" />
     <?php endif; ?>
+  <link type="text/css" href="<?php $this->options->themeUrl('css/font-awesome.min.css'); ?>" rel="stylesheet">
 <link type="text/css" href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>" rel="stylesheet">
   <link type="text/css" href="<?php $this->options->themeUrl('css/index.css'); ?>" rel="stylesheet">
   <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.js'); ?>"></script>
@@ -41,8 +42,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-    href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,9 +58,9 @@
     /* 如果提供背景, 就覆盖css/header.css里的默认背景 */
     #description {
     background: url(<?php $this->options->bgImg() ?>);
-background-position-y: 10%;
-background-size: cover;
-}
+    background-position-y: 10%;
+    background-size: cover;
+    }
 </style>
   <?php endif; ?>
 
@@ -71,6 +71,11 @@ background-size: cover;
   <div id="header">
   <div class="header-title">
   <a class="site-title" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
+  <span class="icon-head">
+    <a href="mailto:<?php $this->author->mail(); ?>""><i class="fa fa-envelope-o"></i></a>
+    <a href="https://github.com/lijianhua"><i class="fa fa-github-square"></i></a>
+    <a href="<?php $this->options->feedUrl(); ?>"><i class="fa fa-rss"></i></a>
+  </span>
   </div>
   </div> 
 
