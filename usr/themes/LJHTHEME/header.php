@@ -70,7 +70,7 @@
   <body>
   <div id="header">
   <div class="header-title">
-  <a class="site-title" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?> soso</a>
+  <a class="site-title" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?> juest soso</a>
   <span class="icon-head">
     <a href="mailto:<?php $this->author->mail(); ?>"><i class="fa fa-envelope-o"></i></a>
     <a href="https://github.com/lijianhua" target="_blank"><i class="fa fa-github-square"></i></a>
