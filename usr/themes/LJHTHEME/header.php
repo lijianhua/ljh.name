@@ -72,7 +72,6 @@
   <div class="header-title">
   <a class="site-title" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
   <span class="icon-head">
-   写不好代码的程序员不是好厨师 
     <a href="mailto:<?php $this->author->mail(); ?>"><i class="fa fa-envelope-o"></i></a>
     <a href="https://github.com/lijianhua" target="_blank"><i class="fa fa-github-square"></i></a>
     <a href="<?php $this->options->feedUrl(); ?>"><i class="fa fa-rss"></i></a>
