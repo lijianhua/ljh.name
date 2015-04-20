@@ -2,7 +2,7 @@
     <div class="ft clrfix">
         <dl>
             <dt>文章</dt>
-            <?php $this->widget('Widget_Contents_Post_Recent')->parse('<dd><a href="{permalink}" class="item" target="_blank">{title}</a></dd>'); ?>
+            <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=6')->parse('<dd><a href="{permalink}" class="item" target="_blank">{title}</a></dd>'); ?>
         </dl>
         <!-- <dl> -->
         <!--     <dt>项目</dt> -->
