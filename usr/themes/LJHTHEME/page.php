@@ -6,14 +6,17 @@
         if(strpos($_SERVER["PHP_SELF"],"themes")) header('Location:/');
         $this->need('header.php');
 ?>
-
 <div class="main">
-    <article class="block">
-        <p class="title"><a href="<?php $this->permalink() ?>" target="_blank"><?php $this->title() ?></a></p>
-        <div>
+    <div class="info">
+        <div class="info-title-detail"><?php $this->title() ?></div>
+        <div class="content">
+            <div class="info-time">
+                <i class="info-img"></i>
+                <span><?php $this->date('Y-m-d'); ?></span>
+            </div>
             <?php $this->content(); ?>
         </div>
-    </article>
+    </div>
     <?php $this->need('comments.php'); ?>
 </div>
 

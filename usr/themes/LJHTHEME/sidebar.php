@@ -19,6 +19,10 @@
             <dt>分类</dt>
         <?php $this->widget('Widget_Metas_Category_List')->listCategories(); ?>
         </dl>
+        <dl>
+          <dt>我的朋友</dt>
+          <dd><a href="http://yuez.me">乐正</a></dd>
+        </dl>
     </div>
 <div class="company"><span>
   © 2015  <?php $this->options->title();?>  黑ICP备15002574号
