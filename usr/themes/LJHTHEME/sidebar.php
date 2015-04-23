@@ -21,7 +21,7 @@
         </dl>
     </div>
 <div class="company"><span>
-  © 2015  <?php $this->options->title();?>   京ICP备14056036号-1
+  © 2015  <?php $this->options->title();?>  黑ICP备15002574号
     <?php _e('由 Typecho 强力驱动'); ?>.
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254043463'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254043463%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </span></div>
