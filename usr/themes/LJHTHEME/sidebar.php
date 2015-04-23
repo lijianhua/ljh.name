@@ -21,7 +21,7 @@
         </dl>
         <dl>
           <dt>我的朋友</dt>
-          <dd><a href="http://yuez.me">乐正</a></dd>
+          <dd><a href="http://yuez.me" target="__blank">乐正</a></dd>
         </dl>
     </div>
 <div class="company"><span>
