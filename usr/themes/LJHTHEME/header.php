@@ -72,6 +72,7 @@
   <div class="header-title">
   <a class="site-title" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
   <span class="icon-head">
+    <a href='/index.php/readme.html' target='__blank'><i class="fa fa-medium fa-1"></i></a>
     <a href="mailto:<?php $this->author->mail(); ?>"><i class="fa fa-envelope-o"></i></a>
     <a href="https://github.com/lijianhua" target="_blank"><i class="fa fa-github-square"></i></a>
     <a href="<?php $this->options->feedUrl(); ?>"><i class="fa fa-rss"></i></a>
