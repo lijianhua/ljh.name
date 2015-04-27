@@ -238,6 +238,10 @@ h6 a{
         line-height: 3em;
         padding-left: 10px;
     }
+    .ft dl{
+      clear:both;
+      margin-bottom:10px;
+}
     .main{
         width: 100%;
         margin:10px auto 60px auto;
